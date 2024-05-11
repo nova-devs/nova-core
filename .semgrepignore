@@ -1,0 +1,24 @@
+# Common large paths
+node_modules/
+build/
+dist/
+vendor/
+.env/
+.venv/
+venv
+.tox/
+*.min.js
+.npm/
+
+# Common test paths
+*_test.go
+# Semgrep rules folder
+.semgrep
+
+# Semgrep-action log folder
+.semgrep_logs/
+
+core/mixins.py
+account/middleware.py
+
+#CVE-2019-12760

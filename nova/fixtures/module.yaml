@@ -1,0 +1,43 @@
+- model: account.module
+  pk: 1
+  fields:
+    description: home
+    icon: fa-home
+    is_active: true
+
+
+- model: account.module
+  pk: 100
+  fields:
+    description: access-control
+    icon: fa-fingerprint
+    is_active: true
+
+
+- model: account.module
+  pk: 200
+  fields:
+    description: group-management
+    icon: fa-people-group
+    is_active: true
+
+- model: account.module
+  pk: 300
+  fields:
+    description: reports
+    icon: fa-file-alt
+    is_active: true
+
+- model: account.module
+  pk: 400
+  fields:
+    description: nova-jovens
+    icon: fa-j
+    is_active: true
+
+- model: account.module
+  pk: 500
+  fields:
+    description: finances
+    icon: fa-file-alt
+    is_active: true

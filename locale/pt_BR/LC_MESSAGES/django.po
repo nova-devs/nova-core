@@ -1,0 +1,299 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-04-28 16:55-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: account/serializers.py:172
+msgid "The menu has already registered for module"
+msgstr "O menu já está registrado para este módulo"
+
+#: account/viewsets.py:197
+msgid "You are not allowed to use module"
+msgstr "Você não tem permissão para usar este módulo"
+
+#: core/exceptions.py:7
+#, python-format
+msgid "Could not perform this action, cause: %s"
+msgstr "Não foi possível realizar essa ação: %s"
+
+#: core/exceptions.py:15
+msgid "Report no record found"
+msgstr "Relatório sem registros encontrados"
+
+#: core/exceptions.py:20 nova/messages.py:24
+msgid "Registry with dependencies and can't be deleted"
+msgstr "Registro com dependências não pode ser deletado"
+
+#: core/models.py:16
+msgid "Id"
+msgstr "Código"
+
+#: core/models.py:22 nova/messages.py:4
+msgid "Created at"
+msgstr "Criado em"
+
+#: core/models.py:28 nova/messages.py:5
+msgid "Modified at"
+msgstr "Modificado em"
+
+#: core/models.py:34 nova/messages.py:6
+msgid "Active"
+msgstr "Ativo"
+
+#: core/models.py:99
+msgid "Company"
+msgstr "Instituição"
+
+#: core/models.py:100
+msgid "Companies"
+msgstr "Instituições"
+
+#: core/models.py:120 core/models.py:121
+msgid "Company Configuration"
+msgstr "Configuração da instituição"
+
+#: core/models.py:143
+msgid "Company Settings Permission"
+msgstr "Permissão das configurações da instituição"
+
+#: core/models.py:144
+msgid "Company Settings Permissions"
+msgstr "Permissões das configurações da instituição"
+
+#: core/models.py:168
+msgid "Company Settings Menu"
+msgstr "Menu de configuração da instituição"
+
+#: core/models.py:169
+msgid "Company Settings Permissions Menu"
+msgstr "Menu de permissões das configurações da instituição"
+
+#: nova/messages.py:3
+msgid "User"
+msgstr "Usuário"
+
+#: nova/messages.py:7
+msgid "Male"
+msgstr "Masculino"
+
+#: nova/messages.py:8
+msgid "Female"
+msgstr "Feminino"
+
+#: nova/messages.py:9
+msgid "Username"
+msgstr "Username"
+
+#: nova/messages.py:10
+msgid "Password"
+msgstr "Senha"
+
+#: nova/messages.py:11
+msgid "Matriculation"
+msgstr "Matrícula"
+
+#: nova/messages.py:12
+msgid "Name"
+msgstr "Nome"
+
+#: nova/messages.py:13
+msgid "e-Mail"
+msgstr "E-mail"
+
+#: nova/messages.py:14
+msgid "Is active"
+msgstr "Ativo"
+
+#: nova/messages.py:15
+msgid "Is superuser"
+msgstr "É superusuário"
+
+#: nova/messages.py:16
+msgid "Avatar"
+msgstr "Avatar"
+
+#: nova/messages.py:17
+msgid "Phone number"
+msgstr "Telefone"
+
+#: nova/messages.py:18
+msgid "Gender"
+msgstr "Gênero"
+
+#: nova/messages.py:19
+msgid "Birthday"
+msgstr "Data de nascimento"
+
+#: nova/messages.py:20
+msgid "Church groups"
+msgstr "Grupos da igreja"
+
+#: nova/messages.py:21
+msgid "Groups"
+msgstr "Grupos"
+
+#: nova/messages.py:22
+msgid "Unable to log in with provided credentials."
+msgstr "Não foi possível realizar login com as credenciais fornecidas"
+
+#: nova/messages.py:23
+msgid "Export fields must be declared"
+msgstr "Campos de exportação precisam ser declarados. Informe o desenvolvedor."
+
+#: nova/messages.py:25
+msgid "You do not have permission to perform this action"
+msgstr "Você não tem permissão para executar esta ação"
+
+#: nova/messages.py:26
+msgid "Invalid password"
+msgstr "Senha inválida"
+
+#: nova/messages.py:27
+msgid "Password has been changed"
+msgstr "Senha foi alterada"
+
+#: nova/messages.py:28
+msgid "No record found"
+msgstr "Nenhum registro encontrado"
+
+#: nova/messages.py:29
+msgid "User already exists"
+msgstr "Usuário já existe"
+
+#: nova/messages.py:30
+msgid "Email with invalid domain"
+msgstr "E-mail com domínio inválido"
+
+#: nova/messages.py:31
+msgid "Email already exists"
+msgstr "E-mail já existe"
+
+#: nova/messages.py:32
+msgid "Seminary"
+msgstr "Seminário"
+
+#: nova/messages.py:33
+msgid "Ministry"
+msgstr "Ministério"
+
+#: nova/messages.py:34
+msgid "GA"
+msgstr "G.A"
+
+#: nova/messages.py:35
+msgid "Flock"
+msgstr "Rebanho"
+
+#: nova/messages.py:36
+msgid "Orientation"
+msgstr "Orientação"
+
+#: nova/messages.py:37
+msgid "General"
+msgstr "Geral"
+
+#: nova/messages.py:38
+msgid "Church"
+msgstr "Igreja"
+
+#: nova/messages.py:39
+msgid "Nova Baby"
+msgstr "Nova Baby"
+
+#: nova/messages.py:40
+msgid "Nova Childish"
+msgstr "Nova Infantil"
+
+#: nova/messages.py:41
+msgid "Nova Kids"
+msgstr "Nova Kids"
+
+#: nova/messages.py:42
+msgid "Nova Teens"
+msgstr "Nova Teens"
+
+#: nova/messages.py:43
+msgid "Nova Youth"
+msgstr "Nova Jovens"
+
+#: nova/messages.py:44
+msgid "Nova Mix"
+msgstr "Nova Mix"
+
+#: nova/messages.py:45
+msgid "Nova Couple"
+msgstr "Nova Casais"
+
+#: nova/messages.py:46
+msgid "Nova Mulher"
+msgstr "Nova Mulher"
+
+#: nova/messages.py:47
+msgid "Nova Idade"
+msgstr "Nova Idade"
+
+#: nova/messages.py:48
+msgid "Description"
+msgstr "Descrição"
+
+#: nova/messages.py:49
+msgid "Type"
+msgstr "Tipo"
+
+#: nova/messages.py:50
+msgid "Category"
+msgstr "Categoria"
+
+#: nova/messages.py:51
+msgid "Users"
+msgstr "Usuários"
+
+#: nova/messages.py:52
+msgid "Church group"
+msgstr "Grupo da igreja"
+
+#: nova/messages.py:53
+msgid "Principal leader"
+msgstr "Líder principal"
+
+#: nova/messages.py:54
+msgid "Auxiliary leader"
+msgstr "Líder auxiliar"
+
+#: nova/messages.py:55
+msgid "Member"
+msgstr "Membro"
+
+#: nova/messages.py:56
+msgid "Members"
+msgstr "Membros"
+
+#: nova/messages.py:57
+msgid "Association type"
+msgstr "Tipo de associação"
+
+#: nova/messages.py:58
+msgid "Church group user"
+msgstr "Usuário do grupo da igreja"
+
+#: nova/messages.py:59
+msgid "Church group users"
+msgstr "Usuários do grupo da igreja"
+
+#: nova/messages.py:60
+msgid "The groups this user belongs to. A user will get all permissions granted to each of their groups."
+msgstr "Os grupos aos quais o usuário pertence. Um usuário terá todas as permiossões concedidadas para cada um dos seus grupos"

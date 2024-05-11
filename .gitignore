@@ -1,0 +1,13 @@
+
+\.idea/
+
+account/__pycache__/
+
+nova/__pycache__/
+
+.git
+venv/
+/dist
+/.env
+*.pyc
+.pytest_cache

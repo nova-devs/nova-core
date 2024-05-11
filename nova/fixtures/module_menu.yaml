@@ -1,0 +1,94 @@
+# HOME MODULE (1)
+- model: account.modulemenu
+  pk: 1
+  fields:
+    root:
+    module: 1  # Module: Home
+    menu: 1  # Menu item: Home
+    order: 1
+    has_divider: false
+    is_active: true
+
+
+# ACCESS CONTROL MODULE (100)
+- model: account.modulemenu
+  pk: 100
+  fields:
+    root:
+    module: 100  # Module: Access control
+    menu: 100  # Menu item: root text of access control
+    order: 100
+    has_divider: false
+    is_active: true
+
+- model: account.modulemenu
+  pk: 101
+  fields:
+    root: 100
+    module: 100  # Module: Access control
+    menu: 101  # Menu item: User
+    order: 101
+    has_divider: false
+    is_active: true
+
+- model: account.modulemenu
+  pk: 102
+  fields:
+    root: 100
+    module: 100  # Module: Access control
+    menu: 102  # Menu item: Group
+    order: 102
+    has_divider: false
+    is_active: true
+
+- model: account.modulemenu
+  pk: 103
+  fields:
+    root: 100
+    module: 100  # Module: Access control
+    menu: 103  # Menu item: Module
+    order: 103
+    has_divider: false
+    is_active: true
+
+- model: account.modulemenu
+  pk: 110
+  fields:
+    root:
+    module: 100  # Module: Access control
+    menu: 110  # Menu item: root text of settings
+    order: 110
+    has_divider: false
+    is_active: true
+
+- model: account.modulemenu
+  pk: 111
+  fields:
+    root: 110
+    module: 100  # Module: Access control
+    menu: 111  # Menu item: Settings
+    order: 111
+    has_divider: false
+    is_active: true
+
+
+# GROUP MANAGEMENT MODULE (200)
+- model: account.modulemenu
+  pk: 200
+  fields:
+    root:
+    module: 200  # Module: Group management
+    menu: 200  # Menu item: root text of group management
+    order: 200
+    has_divider: false
+    is_active: true
+
+- model: account.modulemenu
+  pk: 201
+  fields:
+    root: 200
+    module: 200  # Module: Group management
+    menu: 201  # Menu item: Church groups
+    order: 201
+    has_divider: false
+    is_active: true

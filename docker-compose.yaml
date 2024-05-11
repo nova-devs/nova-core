@@ -1,0 +1,47 @@
+version: '3'
+services:
+
+  core:
+    image: nova-core
+    security_opt:
+      - no-new-privileges:true
+      - another-opt:true
+    ports:
+      - "9005:8000"
+    working_dir: /usr/src/app
+    env_file: nova.conf
+    read_only: true
+    command: >-
+            /bin/sh -c "python wait.py postgres 5432 180
+            && python -u manage.py migrate
+            && python manage.py compilemessages
+            && python manage.py loaddata account/fixtures/menu.json
+            && python manage.py loaddata account/fixtures/module.json
+            && python manage.py loaddata account/fixtures/module_menu.json
+            && python production-server.py --port=8000"
+    deploy:
+      mode: replicated
+      replicas: 1
+      update_config:
+        parallelism: 1
+        delay: 30s
+      labels: [APP=CORE]
+      restart_policy:
+        condition: on-failure
+        delay: 10s
+        max_attempts: 3
+        window: 120s
+
+  web:
+    image: nova-web
+    security_opt:
+      - no-new-privileges:true
+      - another-opt:true
+    ports:
+      - "8081:80"
+    read_only: true
+
+networks:
+  default:
+    external:
+      name: signal

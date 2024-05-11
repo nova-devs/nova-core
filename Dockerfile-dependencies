@@ -1,0 +1,39 @@
+ARG image=base-image
+
+FROM $image as base
+
+ENV APP_PATH /usr/src/app
+ENV TIMEZONE 'America/Manaus'
+WORKDIR $APP_PATH
+
+RUN mkdir -p $APP_PATH \
+  && apt-get update && apt-get install -y \
+    apt-transport-https \
+    unixodbc \
+    unixodbc-dev \
+    build-essential \
+    ncurses-dev \
+    libjpeg62-turbo-dev \
+    libpng-dev \
+    gettext \
+    python3-dev \
+    libpq-dev \
+    openssl \
+    git \
+    ca-certificates \
+  && chmod +rwx /etc/ssl/openssl.cnf \
+  && sed -i 's/TLSv1.2/TLSv1/g' /etc/ssl/openssl.cnf \
+  && sed -i 's/SECLEVEL=2/SECLEVEL=1/g' /etc/ssl/openssl.cnf \
+  && apt-get autoremove -y \
+  && rm -rf /var/lib/apt/lists/* \
+  && echo $TIMEZONE > /etc/timezone \
+  && rm /etc/localtime \
+  && ln -snf /usr/share/zoneinfo/$TIMEZONE /etc/localtime \
+  && dpkg-reconfigure -f noninteractive tzdata
+
+FROM application-sqlserver as library-dependencies
+
+COPY requirements.txt $APP_PATH
+
+RUN pip install --upgrade pip \
+  && pip install --no-cache-dir -r requirements.txt

@@ -1,0 +1,16 @@
+.git/
+venv/
+env/
+node_modules/
+docs/
+pgdata/
+database-model/
+compose
+html_coverage
+.DS_Store
+.idea
+.venv
+hs_err_pid8051.log
+reports
+report-templates
+relatorios

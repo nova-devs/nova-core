@@ -1,0 +1,15 @@
+[flake8]
+exclude=
+    .git,
+    __pycache__,
+    old,
+    build,
+    dist,
+    sfc/settings.py,
+    production/migrations,
+    venv,
+    */migrations/*,
+    manage.py
+extend_ignore=C901
+max-complexity=5
+max-line-length=200

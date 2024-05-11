@@ -1,0 +1,66 @@
+# HOME
+- model: account.menu
+  pk: 1
+  fields:
+    description: home
+    icon: fa-home
+    route: /basic/home
+
+# ACCESS CONTROL MODULE (100)
+- model: account.menu
+  pk: 100
+  fields:
+    description: access-control
+    icon: fa-file-upload
+    route: null
+
+- model: account.menu
+  pk: 101
+  fields:
+    description: user
+    icon: fa-user
+    route: /account/user
+
+- model: account.menu
+  pk: 102
+  fields:
+    description: group
+    icon: fa-users
+    route: /account/group
+
+- model: account.menu
+  pk: 103
+  fields:
+    description: module
+    icon: fa-grip-horizontal
+    route: /account/module
+
+- model: account.menu
+  pk: 110
+  fields:
+    description: preferences
+    icon: fa-file-upload
+    route: null
+
+- model: account.menu
+  pk: 111
+  fields:
+    description: settings
+    icon: fa-gears
+    route: settings/preferences
+
+# GROUP MANAGEMENT MODULE (200)
+
+- model: account.menu
+  pk: 200
+  fields:
+    description: group-management
+    icon: fa-file-upload
+    route: null
+
+- model: account.menu
+  pk: 201
+  fields:
+    description: church-groups
+    icon: fa-people-group
+    route: /church_group_management/church_group
